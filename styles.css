@@ -308,7 +308,7 @@ h3 {
   }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1400px) {
   .hero,
   .intro,
   .timeline li {
