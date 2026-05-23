@@ -278,6 +278,26 @@ h3 {
   color: rgba(255, 255, 255, 0.78);
 }
 
+@media (max-width: 1400px) {
+  .hero,
+  .intro,
+  .timeline li {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero__card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 860px) {
   main {
     width: min(100% - 28px, 680px);
@@ -306,29 +326,7 @@ h3 {
   .card {
     min-height: auto;
   }
-}
 
-@media (max-width: 1400px) {
-  .hero,
-  .intro,
-  .timeline li {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    min-height: auto;
-  }
-
-  .hero__card {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 860px) {
   .hero__card,
   .grid {
     grid-template-columns: 1fr;
